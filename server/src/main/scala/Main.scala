@@ -10,5 +10,5 @@ object Main extends App {
   }
   val getRoot = Request[IO](Method.GET, uri("/hello/foo"))
   val io = service.orNotFound.run(getRoot)
-  println(io.runUnsafeSync())
+  println(io.unsafeRunSync())
 }
