@@ -7,7 +7,8 @@ val commonSettings = Seq(
   libraryDependencies ++= Seq(
     "org.http4s" %% "http4s-core" % http4sVersion,
     "org.http4s" %% "http4s-dsl" % http4sVersion
-  )
+  ),
+  scalacOptions += "-Ypartial-unification"  
 )
 lazy val server = (project in file("server"))
   .settings(commonSettings)
