@@ -1,0 +1,7 @@
+project/target
+project/project
+server/target
+client/target
+target
+.vscode
+.DS_Store
