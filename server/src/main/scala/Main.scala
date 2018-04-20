@@ -8,8 +8,7 @@ object Main extends App {
     case GET -> Root / "hello" / name => 
       Ok(s"Hello $name")
   }
-  
-  val getRoot = Request[IO](Method.GET, uri("/foo"))
+  val getRoot = Request[IO](Method.GET, uri("/hello/foo"))
   val io = service.orNotFound.run(getRoot)
   println(io.runUnsafeSync())
 }
