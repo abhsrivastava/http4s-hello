@@ -2,7 +2,7 @@ val http4sVersion = "0.18.9"
 
 val commonSettings = Seq(
   organization := "com.example",
-  scalaVersion := "2.12.4",
+  scalaVersion := "2.12.5",
   version      := "0.1.0-SNAPSHOT",
   libraryDependencies ++= Seq(
     "org.http4s" %% "http4s-core" % http4sVersion,
