@@ -5,7 +5,7 @@ import org.http4s.implicits._
 
 object Main extends App {
   val service = HttpService[IO] {
-    case GET -> Root / name => 
+    case GET -> Root / "hello" / name => 
       Ok(s"Hello $name")
   }
   
